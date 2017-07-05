@@ -1,14 +1,18 @@
 class Game
-
-  def initialize (number_of_players, turn, player_position)
-    @number_of_players = number_of_players
-    @turn = turn
-    @winner = winner
-    @player_position = player_position
+ attr_accessor :number_of_players
+  def initialize (player, board, dice)
+    @player = player
+    @board = board
+    @dice = dice
+  
   end 
 
-  def add_player
+  def count_players(player)
+    return player.count
+  end 
 
+  def add_player(player)
+    @player << player
   end
-  
+
 end 
