@@ -12,4 +12,6 @@ class Player
     @position += move
   end
 
+ 
+
 end

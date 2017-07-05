@@ -8,7 +8,13 @@ class Board
     @snake = []
   end
 
+  def snake_fall(snake)
+    return snake[:start] - snake[:end]
+  end 
 
+  def ladder_climb(ladder)
+    return ladder[:end] - ladder[:start]
+  end 
 
 
 end 
