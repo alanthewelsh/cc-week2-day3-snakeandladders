@@ -7,7 +7,7 @@ class TestPlayer < Minitest::Test
 
   def setup
 
-    @player1 = Player.new("Dave", 0)
+    @player1 = Player.new("Dave", 24)
     @player2 = Player.new("Sally", 0)
 
   end
@@ -28,7 +28,8 @@ class TestPlayer < Minitest::Test
   end 
 
   def test_move_player
-
+    @player1.move_player(3)
+    assert_equal(27, @player1.position)
   end
 
 

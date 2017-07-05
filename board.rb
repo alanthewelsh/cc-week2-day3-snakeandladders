@@ -1,9 +1,14 @@
 class Board
 
-  def initialize (square, ladder, snake)
+  attr_reader :square
+
+  def initialize (ladder, snake)
     @square = (1..30).to_a
     @ladder = []
     @snake = []
   end
+
+
+
 
 end 

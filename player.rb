@@ -8,6 +8,8 @@ class Player
     @position = position
   end 
 
-  
+  def move_player(move)
+    @position += move
+  end
 
 end
